@@ -4,10 +4,13 @@
   padding-bottom: 50px;
 
   @include vp-1199 {
+    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
     padding-top: 35px;
+    padding-bottom: 65px;
   }
 
   @include vp-767 {
+    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
     padding-top: 15px;
     padding-bottom: 79px;
   }
@@ -30,7 +33,7 @@
     margin-left: 61px;
 
     @include vp-1199 {
-      margin-left: 21px;
+      margin-left: 0;
       align-self: center;
     }
 
@@ -43,7 +46,7 @@
     margin-right: 65px;
 
     @include vp-1199 {
-      margin-right: 21px;
+      margin-right: 0;
     }
 
     @include vp-767 {
@@ -63,6 +66,7 @@
 
     @include hover-focus {
       opacity: 0.7;
+      color: $color-default-black;
     }
 
     @include vp-1199 {
@@ -81,18 +85,26 @@
 
 .header-wrapper {
   display: flex;
+  justify-content: center;
   column-gap: 63px;
   margin-top: -29px;
+
+
+  @include vp-1367 {
+    justify-content: inherit;
+  }
+
 
   @include vp-1199 {
     margin-top: 18px;
     column-gap: normal;
-    margin-top: -12px;
+    margin-top: 3px;
+    justify-content: center;
+    column-gap: 4px;
   }
 
   @include vp-767 {
     margin-top: 0;
-    justify-content: center;
   }
 }
 
@@ -113,6 +125,8 @@
 
     @include hover-focus {
       opacity: 0.7;
+      color: $color-default-black;
+      border-color: $color-default-black;
     }
 
     @include vp-1199 {
@@ -134,7 +148,7 @@
   text-align: right;
 
   @include vp-1199 {
-    margin-left: 22px;
+    margin-left: 0;
   }
 
   @include vp-767 {
@@ -151,15 +165,15 @@
     letter-spacing: 0.05em;
     color: $color-default-white;
     text-transform: uppercase;
-    margin-top: 74px;
-    margin-bottom: 48px;
+    margin-top: 70px;
+    margin-bottom: 50px;
     -webkit-text-stroke: 2px $color-default-white;
 
     @include vp-1199 {
       text-transform: none;
       font-size: 72px;
       line-height: 84px;
-      margin-top: 47px;
+      margin-top: 32px;
       margin-bottom: 39px;
     }
 
@@ -174,16 +188,16 @@
       font-family: 'Alumni Sans';
       font-style: normal;
       font-weight: 600;
-      font-size: 48px;
-      // line-height: 58px;
+      font-size: 40px;
+      line-height: 82px;
       color: $color-default-white;
       letter-spacing: 0.03em;
       -webkit-text-stroke: none;
-      margin-right: 50px;
+      margin-right: 60px;
 
       @include vp-1199 {
-        margin-right: 2px;
-        font-size: 32px;
+        font-size: 27px;
+        margin-right: 6px;
         line-height: 41px;
       }
 
@@ -196,7 +210,7 @@
 
   & p {
     margin-top: auto;
-    margin-bottom: 86px;
+    margin-bottom: 84px;
     margin-right: 20px;
 
     @include vp-1199 {
@@ -220,6 +234,7 @@
 
     @include vp-1199 {
       object-fit: none;
+      margin-left: 10px;
     }
   }
 }

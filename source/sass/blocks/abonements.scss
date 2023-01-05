@@ -1,0 +1,88 @@
+.abonements {
+  background: url("../img/rogl-decor.png") right bottom -19%, linear-gradient(to bottom, $color-bg-abonement 92%, $color-default-white 92%);
+  background-repeat: no-repeat;
+  min-height: 920px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @include vp-767 {
+    background: linear-gradient(to bottom, $color-bg-abonement 95%, $color-default-white 95%);
+  }
+
+  & h2 {
+    text-align: center;
+    font-family: 'Alumni Sans';
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+/* Стиль вкладки */
+.tab {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 341px;
+  overflow: hidden;
+  padding-bottom: 2px;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  margin-bottom: 40px;
+
+  @include vp-1199 {
+    margin-bottom: 45px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    margin-bottom: 35px;
+  }
+}
+
+/* Стиль кнопок, которые используются для открытия содержимого вкладки */
+.tab button {
+  background-color: inherit;
+  // float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 0;
+  padding-bottom: 11px;
+  transition: 0.3s;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(16, 38, 84, 0.5);
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @include hover-focus {
+    color: $color-default-black;
+  }
+}
+
+/* Создание активного/текущего класса связи вкладки */
+.tab button.active {
+  box-shadow: 0 2px #d10a42;
+  color: $color-default-black;
+}
+
+/* Стиль содержимого вкладки */
+// .tabcontent {
+//   display: none;
+//   padding: 6px 12px;
+//   border: 1px solid #ccc;
+//   border-top: none;
+// }
