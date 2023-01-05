@@ -14,6 +14,7 @@
 
   @include vp-767 {
     align-items: center;
+    row-gap: 32px;
   }
 
   & li {
@@ -24,20 +25,6 @@
     flex-direction: column;
     align-items: center;
 
-    @include vp-1199 {
-      min-width: 442px;
-      min-height: 448px;
-    }
-
-    @include vp-767 {
-      aspect-ratio: 0.59 / 0.78;
-      min-width: 290px;
-      max-width: 430px;
-      width: 100%;
-      min-height: 384px;
-      max-height: 514px;
-    }
-
     @include hover-focus {
       border: 7px solid transparent;
       border-image: linear-gradient(#d10a42 1%, #00359f 100%);
@@ -47,9 +34,38 @@
         background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
         color: $color-default-white;
       }
+    }
 
-      & h3 {
-        margin-top: 53px;
+    @include vp-1199 {
+      max-width: 442px;
+      width: 100%;
+      min-height: 448px;
+      align-self: center;
+    }
+
+    @include vp-767 {
+      aspect-ratio: 0.59 / 0.78;
+      min-width: 290px;
+      max-width: 430px;
+      width: 100%;
+      min-height: 384px;
+      max-height: 514px;
+
+      &:first-of-type h3 {
+        @include vp-767 {
+
+          margin-top: 49px;
+        }
+      }
+
+      @include hover-focus {
+        & h3 {
+          margin-top: 53px;
+
+          @include vp-767 {
+            margin-top: 44px;
+          }
+        }
       }
     }
 
@@ -63,6 +79,7 @@
       @include vp-767 {
         font-size: 22px;
         line-height: 24px;
+        margin-top: 55px;
       }
     }
 
@@ -95,6 +112,12 @@
         left: calc(50% - 83px);
         bottom: 6px;
 
+        @include vp-767 {
+          font-size: 48px;
+          line-height: 72px;
+          left: calc(50% - 65px);
+        }
+
         &::after {
           display: inline-flex;
           content: url("../img/sprite/rub.svg");
@@ -110,6 +133,8 @@
       }
     }
   }
+
+
 
   // & .active {
   //   border: 7px solid transparent;
@@ -129,7 +154,7 @@
     border: 2px solid $color-default-black;
 
     @include vp-767 {
-      margin-top: 50px;
+      margin-top: 26px;
     }
 
     // @include hover-focus {

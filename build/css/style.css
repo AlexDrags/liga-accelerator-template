@@ -1048,6 +1048,7 @@ button,
   letter-spacing: 0.03em;
   margin-top: 0;
   margin-bottom: 0;
+  margin-right: 10px;
 }
 
 /* Стиль вкладки */
@@ -1144,10 +1145,6 @@ button,
   background: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
   background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
   color: #ffffff;
-}
-
-.abonements-list li.focus-visible:focus h3 {
-  margin-top: 53px;
 }
 
 .abonements-list li h3 {
@@ -1405,13 +1402,29 @@ button,
     width: 100%;
   }
 
+  .abonements {
+    background: url("../img/rogl-decor-tablet.png") right bottom -7.9%, -webkit-gradient(linear, left top, left bottom, color-stop(99%, #f8f9fc), color-stop(99%, #ffffff));
+    background: url("../img/rogl-decor-tablet.png") right bottom -7.9%, -o-linear-gradient(top, #f8f9fc 99%, #ffffff 99%);
+    background: url("../img/rogl-decor-tablet.png") right bottom -7.9%, linear-gradient(to bottom, #f8f9fc 99%, #ffffff 99%);
+    background-repeat: no-repeat;
+    padding-top: 100px;
+  }
+
+  .abonements h2 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
   .tab {
     margin-bottom: 45px;
+    width: 332px;
   }
 
   .tab button {
     font-size: 18px;
     line-height: 27px;
+    padding-bottom: 12px;
+    padding-top: 18px;
   }
 
   .abonements-list {
@@ -1423,8 +1436,12 @@ button,
   }
 
   .abonements-list li {
-    min-width: 442px;
+    max-width: 442px;
+    width: 100%;
     min-height: 448px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
 }
 
@@ -1585,25 +1602,36 @@ button,
   }
 
   .abonements {
+    padding-top: 62px;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(95%, #f8f9fc), color-stop(95%, #ffffff));
     background: -o-linear-gradient(top, #f8f9fc 95%, #ffffff 95%);
     background: linear-gradient(to bottom, #f8f9fc 95%, #ffffff 95%);
   }
 
+  .abonements h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
   .tab {
-    width: 290px;
+    width: 287px;
     margin-bottom: 35px;
   }
 
   .tab button {
     font-size: 16px;
     line-height: 24px;
+    padding-top: 22px;
+    padding-bottom: 11px;
+    padding-left: 2px;
+    padding-right: 2px;
   }
 
   .abonements-list {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    row-gap: 32px;
   }
 
   .abonements-list li {
@@ -1615,14 +1643,25 @@ button,
     max-height: 514px;
   }
 
+  .abonements-list li.focus-visible:focus h3 {
+    margin-top: 53px;
+  }
+
   .abonements-list li h3 {
     font-size: 22px;
     line-height: 24px;
+    margin-top: 55px;
   }
 
   .abonements-list li span:first-of-type {
     font-size: 80px;
     line-height: 120px;
+  }
+
+  .abonements-list li span:first-of-type span {
+    font-size: 48px;
+    line-height: 72px;
+    left: calc(50% - 65px);
   }
 
   .abonements-list li span:first-of-type span::after {
@@ -1631,7 +1670,29 @@ button,
   }
 
   .abonements-list a {
-    margin-top: 50px;
+    margin-top: 26px;
+  }
+}
+
+@media (max-width: 767px) and (max-width: 767px) {
+  .abonements-list li:first-of-type h3 {
+    margin-top: 49px;
+  }
+
+  .abonements-list li.focus-visible:focus h3 {
+    margin-top: 44px;
+  }
+}
+
+@media (max-width: 767px) and (hover: hover) {
+  .abonements-list li:hover:not(.focus-visible) h3 {
+    margin-top: 53px;
+  }
+}
+
+@media (max-width: 767px) and (hover: hover) and (max-width: 767px) {
+  .abonements-list li:hover:not(.focus-visible) h3 {
+    margin-top: 44px;
   }
 }
 
@@ -1667,9 +1728,5 @@ button,
     background: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
     background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
     color: #ffffff;
-  }
-
-  .abonements-list li:hover:not(.focus-visible) h3 {
-    margin-top: 53px;
   }
 }
