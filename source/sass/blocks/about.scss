@@ -166,6 +166,7 @@
   & iframe {
     width: 364px;
     height: 228px;
+    border: none;
 
     @include vp-1199 {
       width: 267px;
