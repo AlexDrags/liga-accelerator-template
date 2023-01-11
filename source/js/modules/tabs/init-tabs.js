@@ -1,5 +1,4 @@
-// document.getElementById('defaultOpen').click();
-window.addEventListener('DOMContentLoaded', function () {
+const initTabs = ()=> {
 
   let tabcontent = document.querySelectorAll('.tabcontent');
   let tab = document.querySelector('.tab');
@@ -33,4 +32,6 @@ window.addEventListener('DOMContentLoaded', function () {
       }
     }
   });
-});
+};
+
+export default initTabs;

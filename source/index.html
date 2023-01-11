@@ -61,7 +61,7 @@
       <section class="about">
         <div class="about__container container">
           <div class="about__title-wrapper">
-            <h2>Тренажерный зал</h2>
+            <h2 id="gym">Тренажерный зал</h2>
             <p>Просторный зал площадью 900&nbsp;кв/м.</p>
             <p>
               Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела
@@ -93,9 +93,9 @@
         </div>
       </section>
 
-      <section class="abonements">
+      <section class="abonements"  id="abonnement">
         <div class="container">
-          <h2 id="abonnement">Абонементы</h2>
+          <h2>Абонементы</h2>
 
           <div class="tab">
             <button class="tablinks active" id="defaultOpen">1&nbsp;месяц</button>
@@ -243,21 +243,203 @@
         </div>
       </section>
 
+      <section class="coachs" id="coach">
+        <div class="coachs__container container">
+          <h2>Тренеры</h2>
+          <div class="coachs__swiper swiper">
+
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+
+                <div class="coachs__spec-wrapper">
+                  <p>Анна Павлова</p>
+                  <picture>
+                    <source srcset="img/coach-1.webp" type="image/webp">
+                    <img src="img/coach-1.jpg" width="260" height="294" alt="Анна Павлова." class="image"
+                      loading="lazy">
+                  </picture>
+                  <div class="coachs__overlay">
+                    <h3>Анна Павлова</h3>
+                    <span>CrossFit</span>
+                    <ul>
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата<br /> России по CrossFit</li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="swiper-slide">
+
+                <div class="coachs__spec-wrapper">
+                  <p>Алексей Лавров</p>
+                  <picture>
+                    <source srcset="img/coach-2.webp" type="image/webp">
+                    <img src="img/coach-2.jpg" width="260" height="294" alt="Алексей Лавров." class="image"
+                      loading="lazy">
+                  </picture>
+                  <div class="coachs__overlay">
+                    <h3>Алексей Лавров</h3>
+                    <span>CrossFit</span>
+                    <ul>
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата<br /> России по CrossFit</li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="swiper-slide">
+
+                <div class="coachs__spec-wrapper">
+                  <p>Александр Пашков</p>
+                  <picture>
+                    <source srcset="img/coach-3.webp" type="image/webp">
+                    <img src="img/coach-3.jpg" width="260" height="294" alt="Александр Пашков." class="image"
+                      loading="lazy">
+                  </picture>
+                  <div class="coachs__overlay">
+                    <h3>Александр Пашков</h3>
+                    <span>CrossFit</span>
+                    <ul>
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата<br /> России по CrossFit</li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="swiper-slide">
+
+                <div class="coachs__spec-wrapper">
+                  <p>Мария Кетова</p>
+                  <picture>
+                    <source srcset="img/coach-4.webp" type="image/webp">
+                    <img src="img/coach-4.jpg" width="260" height="294" alt="Мария Кетова." class="image"
+                      loading="lazy">
+                  </picture>
+                  <div class="coachs__overlay">
+                    <h3>Мария Кетова</h3>
+                    <span>CrossFit</span>
+                    <ul>
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата<br /> России по CrossFit</li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper-navigation">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container">
+          <h2>Наши преимущества</h2>
+          <div class="wrapper">
+            <ul class="advantages__list">
+              <li>
+                <span>900<small>кв/м</small></span>
+                <div class="advantages__text">
+                  <h3>Площадь</h3>
+                  <p>Занимайтесь без очередей и&nbsp;толпучки</p>
+                </div>
+              </li>
+              <li>
+                <span>70<small>машин</small></span>
+                <div class="advantages__text">
+                  <h3> Собственная парковка</h3>
+                  <p>Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей парковке</p>
+                </div>
+              </li>
+              <li>
+                <span>100</span>
+                <div class="advantages__text">
+                  <h3> Тренажеров</h3>
+                  <p>Современные тренажеры на&nbsp;все группы мышц</p>
+                </div>
+              </li>
+              <li>
+                <span>350<small>мест</small></span>
+                <div class="advantages__text">
+                  <h3> Комфорт</h3>
+                  <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+                </div>
+              </li>
+              <li>
+                <span>5+<small>лет</small></span>
+                <div class="advantages__text">
+                  <h3> Тренерский опыт</h3>
+                  <p>Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class=footer>
-      <div class="container">
-        <div class="footer__logo-wrapper">
-          <svg class="header__logo-image logo-image--secondary" width="68" height="15">
-            <use xlink:href="img/sprite.svg#logo-bottom"></use>
-          </svg>
-          <svg class="header__logo-image logo-image--primary" width="82" height="18">
-            <use xlink:href="img/sprite.svg#logo-bottom"></use>
-          </svg>
-          <svg class="header__logo-image logo-image" width="88" height="32">
-            <use xlink:href="img/sprite.svg#logo-bottom"></use>
-          </svg>
-        </div>
+      <div class="footer__container container">
+        <ul class="site-list">
+          <li>
+            <div class="footer__logo-wrapper">
+              <svg class="header__logo-image logo-image--secondary" width="68" height="15">
+                <use xlink:href="img/sprite.svg#logo-bottom"></use>
+              </svg>
+              <svg class="header__logo-image logo-image--primary" width="82" height="18">
+                <use xlink:href="img/sprite.svg#logo-bottom"></use>
+              </svg>
+              <svg class="header__logo-image logo-image" width="88" height="32">
+                <use xlink:href="img/sprite.svg#logo-bottom"></use>
+              </svg>
+            </div>
+          </li>
+          <li><a href="#gym">Услуги</a></li>
+          <li><a href="#abonnement">Абонементы</a></li>
+          <li><a href="">Акции</a></li>
+          <li><a href="#coach">Тренеры</a></li>
+          <li><a href="">Расписание</a></li>
+        </ul>
+        <ul class="social-list">
+          <li>
+            <a href="">
+              <svg class="icon" width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg class="icon" width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg class="icon" width="25" height="25">
+                <use xlink:href="img/sprite.svg#icon-3"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
       </div>
     </footer>
 
@@ -291,12 +473,7 @@
         </div>
       </div>
     </div> -->
-  <!-- <script>
 
-
-
-
-  </script> -->
   <script src="js/vendor.min.js"></script>
   <script defer src="js/main.min.js"></script>
 </body>

@@ -30,7 +30,7 @@
 
   & .header__logo-wrapper {
     margin-right: auto;
-    margin-left: 61px;
+    // margin-left: 61px;
 
     @include vp-1199 {
       margin-left: 0;
@@ -43,7 +43,7 @@
   }
 
   & .header__ring-wrapper {
-    margin-right: 65px;
+    // margin-right: 65px;
 
     @include vp-1199 {
       margin-right: 0;
@@ -144,7 +144,7 @@
 
 .header__title-text {
   display: flex;
-  margin-left: 83px;
+  margin-left: 20px;
   text-align: right;
 
   @include vp-1199 {

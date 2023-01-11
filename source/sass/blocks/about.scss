@@ -94,7 +94,7 @@
 .about__title-wrapper {
   max-width: 355px;
   margin-left: auto;
-  margin-right: 88px;
+  margin-right: 85px;
 
   @include vp-1199 {
     min-width: 503px;
@@ -110,7 +110,7 @@
 }
 
 .about__media {
-  min-width: 722px;
+  min-width: 660px;
   position: relative;
 
   @include vp-1199 {

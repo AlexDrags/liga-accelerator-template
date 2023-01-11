@@ -35,6 +35,10 @@
   .promo__poster {
     max-width: 660px;
 
+    @include vp-767 {
+      max-width: 737px;
+    }
+
     & img {
       @include vp-767 {
         width: 100%;
