@@ -2239,7 +2239,7 @@ button,
 
 .coachs {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 89px;
 }
 
 .coachs h2 {
@@ -2385,6 +2385,7 @@ button,
 
 .advantages {
   background-color: #f8f9fc;
+  padding-top: 102px;
 }
 
 .advantages h2 {
@@ -2394,6 +2395,8 @@ button,
   line-height: 65px;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-left: 8px;
+  margin-bottom: 47px;
 }
 
 .advantages ul {
@@ -2401,15 +2404,21 @@ button,
   padding: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 307px;
+  position: relative;
+  max-width: 1040px;
+  margin: 0 auto;
+  margin-top: 0;
 }
 
 .advantages ul h3 {
   font-weight: 700;
   font-size: 22px;
   line-height: 33px;
-  margin-bottom: 20px;
+  margin-bottom: 7px;
+  margin-top: 0;
 }
 
 .advantages ul p {
@@ -2417,12 +2426,15 @@ button,
   font-size: 16px;
   line-height: 22px;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .advantages li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 341px;
+  min-height: 162px;
 }
 
 .advantages li span {
@@ -2436,7 +2448,7 @@ button,
   background: -o-linear-gradient(322.39deg, #D10A42 0%, #0041CA 45.58%);
   background: linear-gradient(127.61deg, #D10A42 0%, #0041CA 45.58%);
   font-size: 71px;
-  line-height: 106px;
+  line-height: 66px;
   font-weight: 700;
   -webkit-background-clip: text;
   background-clip: text;
@@ -2455,6 +2467,8 @@ button,
   grid-column-start: 1;
   -ms-grid-column-span: 1;
   grid-column-end: 2;
+  padding-left: 20px;
+  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 }
 
 .advantages li:nth-of-type(2n) {
@@ -2462,6 +2476,7 @@ button,
   grid-column-start: 3;
   -ms-grid-column-span: -4;
   grid-column-end: -1;
+  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 }
 
 .advantages li:nth-of-type(3n) {
@@ -2480,11 +2495,22 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-height: 307px;
+  width: 240px;
+  position: absolute;
+  left: calc(50% - 122px);
+}
+
+.advantages li:nth-of-type(3n) br {
+  display: none;
 }
 
 .advantages li:nth-of-type(3n) h3 {
   color: #ffffff;
   text-align: center;
+  font-size: 26px;
+  line-height: 39px;
+  margin-bottom: 30px;
 }
 
 .advantages li:nth-of-type(3n) span {
@@ -2492,14 +2518,23 @@ button,
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-top: 56px;
+  margin-bottom: 8px;
+  font-size: 74px;
 }
 
 .advantages li:nth-of-type(3n) span small {
   color: #ffffff;
 }
 
+.advantages li:nth-of-type(3n) .advantages__text {
+  padding-left: 0;
+}
+
 .advantages li:nth-of-type(3n) p {
   text-align: center;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .advantages li:nth-of-type(4n) {
@@ -2507,6 +2542,26 @@ button,
   grid-column-start: 1;
   -ms-grid-column-span: 1;
   grid-column-end: 2;
+  padding-left: 20px;
+}
+
+.advantages li:nth-of-type(4n) span {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+}
+
+.advantages li:nth-of-type(4n) .advantages__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
 }
 
 .advantages li:nth-of-type(5n) {
@@ -2514,6 +2569,34 @@ button,
   grid-column-start: 3;
   -ms-grid-column-span: -4;
   grid-column-end: -1;
+}
+
+.advantages li:nth-of-type(5n) span {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+}
+
+.advantages li:nth-of-type(5n) .advantages__text {
+  padding-left: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+}
+
+.advantages li:nth-of-type(5n) p {
+  margin-bottom: 5px;
+}
+
+.advantages__text {
+  padding-left: 30px;
 }
 
 .footer {
@@ -2544,6 +2627,7 @@ button,
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  min-height: 108px;
 }
 
 .footer__logo-wrapper {
@@ -2557,11 +2641,14 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-column-gap: 40px;
   -moz-column-gap: 40px;
   column-gap: 40px;
+  margin-right: auto;
+  width: 70%;
+}
+
+.site-list li:first-of-type {
   margin-right: auto;
 }
 
@@ -2914,6 +3001,7 @@ button,
 
   .coachs {
     padding-top: 55px;
+    padding-bottom: 100px;
   }
 
   .coachs h2 {
@@ -2942,14 +3030,105 @@ button,
     min-width: 268px;
   }
 
+  .advantages {
+    padding-top: 57px;
+  }
+
   .advantages h2 {
     font-size: 42px;
     line-height: 50px;
+    margin-left: 0;
+    margin-right: 10px;
+    margin-right: 22px;
+    margin-bottom: 42px;
+  }
+
+  .advantages ul {
+    max-width: 670px;
+  }
+
+  .advantages ul h3 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 2px;
   }
 
   .advantages li span {
     font-size: 58px;
     line-height: 87px;
+    line-height: 60px;
+  }
+
+  .advantages li:first-of-type {
+    border-bottom: none;
+    padding-left: 0;
+  }
+
+  .advantages li:nth-of-type(2n) {
+    border-bottom: none;
+  }
+
+  .advantages li:nth-of-type(3n) br {
+    display: block;
+  }
+
+  .advantages li:nth-of-type(3n) h3 {
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 15px;
+  }
+
+  .advantages li:nth-of-type(3n) span {
+    margin-top: 40px;
+    margin-bottom: 6px;
+  }
+
+  .advantages li:nth-of-type(3n) {
+    position: static;
+    min-width: 442px;
+    margin: 0 auto;
+    -ms-grid-column: 1;
+    grid-column-start: 1;
+    -ms-grid-column-span: -2;
+    grid-column-end: -1;
+    min-height: 239px;
+    margin-left: calc(50% - 65px);
+  }
+
+  .advantages li:nth-of-type(4n) {
+    padding-left: 0;
+  }
+
+  .advantages li:nth-of-type(5n) .advantages__text {
+    padding-left: 27px;
+  }
+
+  .advantages li:nth-of-type(5n) h3 {
+    margin-bottom: 0;
+  }
+
+  .advantages li:nth-of-type(5n) p {
+    margin-bottom: 3px;
+  }
+
+  .advantages li {
+    width: 317px;
+    min-height: 120px;
+  }
+
+  .advantages__text {
+    padding-left: 26px;
+  }
+
+  .footer__container {
+    min-height: 114px;
+  }
+
+  .site-list {
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    width: 50%;
   }
 }
 
@@ -3306,9 +3485,18 @@ button,
     line-height: 38px;
   }
 
-  .advantages ul {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+  .advantages li:nth-of-type(3n) {
+    width: 290px;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    margin: 0;
+  }
+
+  .advantages li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .advantages li:nth-of-type(n) {
@@ -3318,9 +3506,15 @@ button,
     grid-column-end: -1;
   }
 
+  .footer__container {
+    min-height: 260px;
+  }
+
   .site-list {
     display: -ms-grid;
     display: grid;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
     min-width: 100%;

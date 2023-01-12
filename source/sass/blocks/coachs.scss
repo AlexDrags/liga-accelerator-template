@@ -1,9 +1,10 @@
 .coachs {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 89px;
 
   @include vp-1199 {
     padding-top: 55px;
+    padding-bottom: 100px;
   }
 
   @include vp-767 {

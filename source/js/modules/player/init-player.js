@@ -5,3 +5,8 @@ function removeLayer() {
 }
 
 mediaLayer.addEventListener('click', removeLayer);
+mediaLayer.addEventListener('keyup', (event)=>{
+  if (event.keyCode === 13) {
+    mediaLayer.style.display = 'none';
+  }
+});
