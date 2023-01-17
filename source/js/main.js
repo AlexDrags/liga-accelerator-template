@@ -2,7 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import initTabs from './modules/tabs/init-tabs';
 import './modules/player/init-player';
-import initSlider from './modules/slider/init-slider';
+import './modules/slider/navigation';
 
 // ---------------------------------
 
@@ -20,7 +20,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
-    initSlider();
   });
 });
 

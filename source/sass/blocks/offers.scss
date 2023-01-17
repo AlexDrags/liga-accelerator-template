@@ -1,0 +1,125 @@
+.offers {
+  & h2 {
+    font-family: 'Alumni Sans';
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-left: 8px;
+    margin-bottom: 47px;
+
+    @include vp-1199 {
+      font-size: 42px;
+      line-height: 50px;
+      margin-left: 0;
+      margin-right: 10px;
+      margin-right: 22px;
+      margin-bottom: 42px;
+    }
+
+    @include vp-767 {
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+
+}
+
+.offers__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+
+  @include vp-1199 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+  }
+
+  & a {
+    text-decoration: underline;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+  }
+
+  & p:not(:first-of-type) {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+.offers__wrapper-primary {
+  display: flex;
+  background-color: $color-torch-red;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    width: 100%;
+  }
+
+  @include vp-767 {
+    flex-wrap: wrap;
+  }
+
+  & div {
+    min-width: 280px;
+  }
+
+  & a {
+    color: $color-default-white;
+  }
+
+  & img {
+    @include vp-767 {
+      width: 100%;
+    }
+  }
+}
+
+.offers__wrapper-secondary {
+  display: flex;
+
+  @include vp-1199 {
+    width: 100%;
+  }
+
+  & ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include vp-1199 {
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  & li {
+    border: 7px solid transparent;
+    border-image: linear-gradient(#d10a42 1%, #00359f 100%);
+    border-image-slice: 1;
+    min-height: 211px;
+    min-width: 560px;
+
+    &:not(:last-of-type) {
+      margin-bottom: auto;
+    }
+
+    @include vp-1199 {
+      min-width: 324px;
+    }
+
+    @include vp-767 {
+      min-width: 290px;
+      width: 100%;
+    }
+  }
+}

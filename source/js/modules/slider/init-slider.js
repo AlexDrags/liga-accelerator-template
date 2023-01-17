@@ -1,64 +1,42 @@
 import Swiper from 'swiper';
-import {Navigation} from 'swiper';
+import {
+  Navigation
+} from 'swiper';
 import '../../vendor/swiper';
-const initSlider = ()=>{
-  const swiperPrev = document.querySelector('.swiper-button-prev');
-  const swiperNext = document.querySelector('.swiper-button-next');
 
-  const slider = new Swiper('.swiper', {
-    modules: [Navigation],
-    slidesPerView: 1,
-    spaceBetween: 0,
-    breakpoints: {
-      // when window width is >= 320px
-      // 320: {
-      //   slidesPerView: 2,
-      //   spaceBetween: 20
-      // },
-      // when window width is >= 480px
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-      },
-      // when window width is >= 640px
-      1200: {
-        slidesPerView: 4,
-        spaceBetween: 40,
-      },
+
+const slider = new Swiper('.swiper', {
+  modules: [Navigation],
+
+  direction: 'horizontal',
+  slidesPerView: 1,
+  spaceBetween: 0,
+  loopedSlides: 4,
+  loop: false,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
     },
-    // slidesPerGroup: 4,
-    direction: 'horizontal',
-    loop: true,
-    // loopFillGroupWithBlank: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 40,
     },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+  },
 
-  swiperPrev.addEventListener('click', ()=>{
-    slider.slidePrev();
-  });
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
 
-  swiperNext.addEventListener('click', ()=>{
-    slider.slideNext();
-  });
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
-  swiperPrev.addEventListener('keyup', (event)=>{
-    if (event.keyCode === 13) {
-      slider.slidePrev();
-    }
-  });
+});
 
-  swiperNext.addEventListener('keyup', (event)=>{
-    if (event.keyCode === 13) {
-      slider.slideNext();
-    }
-  });
-};
 
-export default initSlider;
+export default slider;
