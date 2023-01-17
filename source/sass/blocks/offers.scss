@@ -1,4 +1,15 @@
 .offers {
+  padding-top: 104px;
+  padding-bottom: 100px;
+
+  @include vp-1199 {
+    padding-top: 55px;
+  }
+
+  @include vp-767 {
+    padding-top: 38px;
+  }
+
   & h2 {
     font-family: 'Alumni Sans';
     font-weight: 600;
@@ -7,7 +18,7 @@
     letter-spacing: 0.03em;
     text-align: center;
     margin-left: 8px;
-    margin-bottom: 47px;
+    margin-bottom: 34px;
 
     @include vp-1199 {
       font-size: 42px;
@@ -39,19 +50,21 @@
   }
 
   & a {
-    text-decoration: underline;
     text-transform: uppercase;
-    display: block;
+    display: inline-block;
+    vertical-align: middle;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.05em;
+    border-bottom: 1px solid $color-default-white;
+
+    @include hover-focus {
+      opacity: 0.5;
+    }
   }
 
-  & p:not(:first-of-type) {
-    font-size: 18px;
-    line-height: 25px;
-  }
+
 }
 
 .offers__wrapper-primary {
@@ -65,19 +78,97 @@
 
   @include vp-767 {
     flex-wrap: wrap;
+    width: 100%;
   }
 
   & div {
     min-width: 280px;
+
+    @include vp-767 {
+      min-width: 290px;
+      width: 100%;
+    }
+  }
+
+  & div:first-of-type {
+    padding-left: 45px;
+    display: flex;
+    flex-direction: column;
+
+    @include vp-1199 {
+      margin-right: auto;
+    }
+
+    @include vp-767 {
+      // margin-right: 0;
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+
+  & div:last-of-type {
+    @include vp-1199 {
+      min-width: 399px;
+    }
+
+    @include vp-767 {
+      min-width: 290px;
+    }
+  }
+
+  & p:first-of-type {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 44px;
+    margin-top: 32px;
+    margin-bottom: 14px;
+
+    @include vp-767 {
+      margin-bottom: 8px;
+    }
+
+    & span {
+      font-weight: 700;
+      font-size: 70px;
+      margin-top: 10px;
+    }
+  }
+
+  & p:not(:first-of-type) {
+    font-size: 18px;
+    line-height: 25px;
+
+    @include vp-767 {
+      margin-bottom: 31px;
+    }
   }
 
   & a {
     color: $color-default-white;
+    margin-top: auto;
+    margin-bottom: 45px;
+    align-self: baseline;
+
+    @include vp-767 {
+      align-self: center;
+    }
   }
 
   & img {
-    @include vp-767 {
+    display: block;
+    object-fit: cover;
+
+    @include vp-1199 {
+      display: block;
+      object-fit: cover;
+      max-height: 462px;
       width: 100%;
+    }
+
+    @include vp-767 {
+     max-height: none;
     }
   }
 }
@@ -89,6 +180,10 @@
     width: 100%;
   }
 
+  @include vp-767 {
+    width: 100%;
+  }
+
   & ul {
     margin: 0;
     padding: 0;
@@ -97,8 +192,40 @@
     flex-wrap: wrap;
 
     @include vp-1199 {
+      row-gap: 10px;
       justify-content: space-between;
       width: 100%;
+    }
+  }
+
+  & h3 {
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 10px;
+
+    @include vp-767 {
+      margin-top: 36px;
+    }
+  }
+
+  & p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 0;
+  }
+
+  & a {
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: auto;
+    border-bottom: 1px solid $color-default-black;
+    align-self: baseline;
+    margin-bottom: 29px;
+
+    @include vp-767 {
+      margin-top: 12px;
+      align-self: center;
     }
   }
 
@@ -108,18 +235,52 @@
     border-image-slice: 1;
     min-height: 211px;
     min-width: 560px;
+    padding-left: 30px;
 
-    &:not(:last-of-type) {
-      margin-bottom: auto;
-    }
+    display: flex;
+    flex-direction: column;
 
     @include vp-1199 {
       min-width: 324px;
+      padding-left: 29px;
     }
 
     @include vp-767 {
       min-width: 290px;
       width: 100%;
+      padding-left: 0;
+      text-align: center;
     }
+
+
+    &:first-of-type br {
+      display: none;
+
+      @include vp-1199 {
+        display: block;
+      }
+    }
+
+    &:last-of-type br {
+      display: none;
+
+      @include vp-767 {
+        display: block;
+      }
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 40px;
+
+      @include vp-1199 {
+        margin-bottom: auto;
+      }
+
+      @include vp-767 {
+        margin-bottom: 20px;
+      }
+    }
+
+
   }
 }

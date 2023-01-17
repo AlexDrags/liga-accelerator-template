@@ -9,10 +9,10 @@ const slider = new Swiper('.swiper', {
   modules: [Navigation],
 
   direction: 'horizontal',
-  slidesPerView: 1,
+  // slidesPerView: 1,
   spaceBetween: 0,
-  loopedSlides: 4,
-  loop: false,
+  loopedSlides: 8,
+
 
   breakpoints: {
     768: {
@@ -25,6 +25,7 @@ const slider = new Swiper('.swiper', {
       spaceBetween: 40,
     },
   },
+  loop: true,
 
   keyboard: {
     enabled: true,
