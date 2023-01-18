@@ -5,7 +5,7 @@ import {
 import '../../vendor/swiper';
 
 
-const slider = new Swiper('.swiper', {
+const coachSlider = new Swiper('.coachs__swiper', {
   modules: [Navigation],
 
   direction: 'horizontal',
@@ -40,4 +40,4 @@ const slider = new Swiper('.swiper', {
 });
 
 
-export default slider;
+export default coachSlider;
