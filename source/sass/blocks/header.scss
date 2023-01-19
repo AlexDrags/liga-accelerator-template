@@ -1,16 +1,16 @@
 .header {
-  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   padding-top: 30px;
   padding-bottom: 50px;
 
   @include vp-1199 {
-    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
     padding-top: 35px;
     padding-bottom: 65px;
   }
 
   @include vp-767 {
-    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
     padding-top: 15px;
     padding-bottom: 79px;
   }
@@ -42,7 +42,6 @@
   }
 
   & .header__ring-wrapper {
-
     @include vp-1199 {
       margin-right: 0;
     }
@@ -54,8 +53,8 @@
 
   & a {
     display: block;
-    font-family: 'Alumni Sans';
-    font-style: normal;
+    font-family: "Alumni Sans", sans-serif;
+    font-style: "normal";
     font-weight: 600;
     font-size: 26px;
     line-height: 31px;
@@ -87,15 +86,7 @@
   column-gap: 63px;
   margin-top: -29px;
 
-
-  // @include vp-1367 {
-  //   justify-content: inherit;
-  // }
-
-
   @include vp-1199 {
-    margin-top: 18px;
-    column-gap: normal;
     margin-top: 3px;
     justify-content: center;
     column-gap: 4px;
@@ -155,8 +146,8 @@
 
   & h1 {
     order: 2;
-    font-family: 'Alumni Sans';
-    font-style: normal;
+    font-family: "Alumni Sans", sans-serif;
+    font-style: "normal";
     font-weight: 600;
     font-size: 92px;
     line-height: 110px;
@@ -183,8 +174,8 @@
     & span {
       display: inline-block;
       text-transform: uppercase;
-      font-family: 'Alumni Sans';
-      font-style: normal;
+      font-family: "Alumni Sans", sans-serif;
+      font-style: "normal";
       font-weight: 600;
       font-size: 40px;
       line-height: 82px;

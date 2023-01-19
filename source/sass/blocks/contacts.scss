@@ -52,7 +52,6 @@
   }
 
   & form {
-
     @include vp-1199 {
       max-width: 566px;
       justify-self: center;
@@ -68,7 +67,7 @@
   }
 
   & h2 {
-    font-family: 'Alumni Sans';
+    font-family: "Alumni Sans", sans-serif;
     font-weight: 800;
     font-size: 54px;
     line-height: 84px;
@@ -168,7 +167,7 @@
   }
 
   & h2 {
-    font-family: 'Alumni Sans';
+    font-family: "Alumni Sans", sans-serif;
     font-weight: 600;
     font-size: 54px;
     line-height: 65px;
@@ -229,7 +228,7 @@
 
       &::after {
         position: absolute;
-        content: '';
+        content: "";
         width: 1px;
         height: 77%;
         background-color: #74819c;

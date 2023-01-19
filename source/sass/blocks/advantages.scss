@@ -15,7 +15,7 @@
   }
 
   & h2 {
-    font-family: 'Alumni Sans';
+    font-family: "Alumni Sans", sans-serif;
     font-weight: 600;
     font-size: 54px;
     line-height: 65px;
@@ -28,7 +28,6 @@
       font-size: 42px;
       line-height: 50px;
       margin-left: 0;
-      margin-right: 10px;
       margin-right: 22px;
       margin-bottom: 42px;
     }
@@ -104,7 +103,6 @@
 
     @include vp-1199 {
       flex-basis: 339px;
-      // display: inline-flex;
       min-height: 60px;
     }
 
@@ -127,10 +125,17 @@
       align-items: end;
       min-height: 162px;
 
-
       @include vp-1199 {
         align-items: flex-start;
         min-height: 60px;
+      }
+
+      & .advantages__text p {
+        line-height: 25px;
+
+        @include vp-767 {
+          line-height: 23px;
+        }
       }
     }
 
@@ -143,7 +148,7 @@
 
   & > li > p {
     margin: 0;
-    background: linear-gradient(127.61deg, #D10A42 0%, #0041CA 45.58%);
+    background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 71px;
@@ -177,12 +182,11 @@
     }
   }
 
-  &>li:first-of-type+li {
+  & > li:first-of-type + li {
     display: none;
 
     @include vp-1199 {
       display: flex;
-      // padding-left: 20px;
     }
 
     @include vp-767 {
@@ -190,8 +194,8 @@
     }
   }
 
-  &:first-of-type>li:first-of-type+li,
-  &:last-of-type>li:last-of-type {
+  &:first-of-type > li:first-of-type + li,
+  &:last-of-type > li:last-of-type {
     @include vp-1199 {
       padding-left: 20px;
 
@@ -204,30 +208,30 @@
       padding-left: 0;
 
       & .advantages__text {
-        padding-left: 0px;
+        padding-left: 0;
       }
     }
   }
 
-  &:first-of-type>li:nth-child(2n) {
+  &:first-of-type > li:nth-child(2n) {
     @include vp-1199 {
       padding-left: 20px;
     }
   }
 
-  &:last-of-type>li:nth-child(2n+1) {
+  &:last-of-type > li:nth-child(2n+1) {
     @include vp-1199 {
       padding-left: 20px;
     }
   }
 
-  &:first-of-type>li:last-of-type {
+  &:first-of-type > li:last-of-type {
     @include vp-1199 {
       display: none;
     }
   }
 
-  &:last-of-type>li:first-of-type {
+  &:last-of-type > li:first-of-type {
     @include vp-1199 {
       display: none;
     }
@@ -246,16 +250,6 @@
 
     @include vp-767 {
       padding-left: 0;
-    }
-  }
-
-  & li:not(:first-of-type) {
-    & .advantages__text p {
-      line-height: 25px;
-
-      @include vp-767 {
-        line-height: 23px;
-      }
     }
   }
 }
@@ -299,7 +293,7 @@
     }
   }
 
-  &>li>p {
+  & > li > p {
     margin: 0;
     margin-top: 36px;
     font-size: 71px;
@@ -319,7 +313,7 @@
     }
   }
 
-  &>li:not(:last-of-type)>p {
+  & > li:not(:last-of-type) > p {
     line-height: 71px;
   }
 
@@ -344,11 +338,6 @@
   & .advantages__text {
     padding-left: 0;
   }
-
-  // @include vp-1199 {
-  //   grid-column-start: 1;
-  //   grid-column-end: -1;
-  // }
 }
 
 .advantages__text {

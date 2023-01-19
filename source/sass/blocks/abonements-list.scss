@@ -43,7 +43,7 @@
       }
 
       & a {
-        background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+        background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
         color: $color-default-white;
         margin-top: 30px;
 
@@ -67,7 +67,7 @@
       }
 
       & a {
-        background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+        background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
         color: $color-default-white;
         margin-top: 30px;
 
@@ -91,7 +91,7 @@
       }
 
       & a {
-        background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+        background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
         color: $color-default-white;
         margin-top: 30px;
 
@@ -181,7 +181,7 @@
 
       & span {
         position: absolute;
-        content: '';
+        content: "";
         color: $color-default-black;
         font-weight: 700;
         font-size: 60px;
@@ -221,12 +221,12 @@
       }
 
       @include hover-focus {
-        background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+        background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
         color: $color-default-white;
       }
 
       &:active {
-        background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+        background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
         color: $color-default-white;
       }
     }
@@ -238,10 +238,8 @@
   //   border-image-slice: 1;
 
   //   & a {
-  //     background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  //     background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   //     color: $color-default-white;
   //   }
   // }
-
-
 }

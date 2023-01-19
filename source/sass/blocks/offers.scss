@@ -13,7 +13,7 @@
   }
 
   & h2 {
-    font-family: 'Alumni Sans';
+    font-family: "Alumni Sans", sans-serif;
     font-weight: 600;
     font-size: 54px;
     line-height: 65px;
@@ -26,7 +26,6 @@
       font-size: 42px;
       line-height: 50px;
       margin-left: 10px;
-      margin-right: 10px;
       margin-right: 22px;
       margin-bottom: 42px;
     }
@@ -36,7 +35,6 @@
       line-height: 38px;
     }
   }
-
 }
 
 .offers__wrapper {
@@ -65,8 +63,6 @@
       opacity: 0.5;
     }
   }
-
-
 }
 
 .offers__wrapper-primary {
@@ -170,7 +166,7 @@
     }
 
     @include vp-767 {
-     max-height: none;
+      max-height: none;
     }
   }
 }
@@ -282,7 +278,5 @@
         margin-bottom: 20px;
       }
     }
-
-
   }
 }
