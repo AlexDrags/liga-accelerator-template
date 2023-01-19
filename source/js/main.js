@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import initTabs from './modules/tabs/init-tabs';
 import './modules/player/init-player';
 import handlerSlider from './modules/slider/navigation';
+import initPhoneMask from './utils/phone-mask';
 
 // ---------------------------------
 
@@ -13,6 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   initTabs();
+  initPhoneMask();
   // Modules
   // ---------------------------------
 
