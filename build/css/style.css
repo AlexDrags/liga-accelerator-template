@@ -1987,6 +1987,7 @@ button,
   padding: 0;
   margin: 0;
   list-style-type: none;
+  row-gap: 39px;
 }
 
 .abonements-list li {
@@ -3247,7 +3248,6 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    row-gap: 39px;
   }
 
   .abonements-list li {

@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+  row-gap: 39px;
 
   @include vp-1239 {
     column-gap: 20px;
@@ -13,7 +14,6 @@
 
   @include vp-1199 {
     flex-direction: column;
-    row-gap: 39px;
   }
 
   @include vp-767 {
