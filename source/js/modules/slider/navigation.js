@@ -1,7 +1,9 @@
 import coachSlider from './init-coachs-slider';
 import reviewsSlider from './init-reviews-slider';
-const swiperPrev = document.querySelector('.swiper-button-prev');
-const swiperNext = document.querySelector('.swiper-button-next');
+const swiperPrev = document.querySelector('.coachs__swiper-button-prev');
+const swiperNext = document.querySelector('.coachs__swiper-button-next');
+const reviewSwiperPrev = document.querySelector('.reviews__swiper-button-prev');
+const reviewSwiperNext = document.querySelector('.reviews__swiper-button-next');
 
 const handlerSlider = () => {
 
@@ -26,24 +28,15 @@ const handlerSlider = () => {
     }
   });
 
-
-  reviewsSlider.addEventListener('click', () => {
-    coachSlider.slidePrev();
-  });
-
-  reviewsSlider.addEventListener('click', () => {
-    coachSlider.slideNext();
-  });
-
-  reviewsSlider.addEventListener('keyup', (event) => {
+  reviewSwiperPrev.addEventListener('keyup', (event) => {
     if (event.keyCode === 13) {
-      coachSlider.slidePrev();
+      reviewsSlider.slidePrev();
     }
   });
 
-  reviewsSlider.addEventListener('keyup', (event) => {
+  reviewSwiperNext.addEventListener('keyup', (event) => {
     if (event.keyCode === 13) {
-      coachSlider.slideNext();
+      reviewsSlider.slideNext();
     }
   });
 };

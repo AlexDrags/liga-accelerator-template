@@ -10,8 +10,12 @@ const reviewsSlider = new Swiper('.reviews__swiper', {
   slidesPerView: 1,
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.reviews__swiper-button-next',
+    prevEl: '.reviews__swiper-button-prev',
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
   },
 });
 

@@ -33,8 +33,8 @@ const coachSlider = new Swiper('.coachs__swiper', {
   },
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.coachs__swiper-button-next',
+    prevEl: '.coachs__swiper-button-prev',
   },
 
 });
