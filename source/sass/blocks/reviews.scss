@@ -88,6 +88,7 @@
 
   & .reviews__swiper-slide {
     & > div {
+      position: relative;
       width: 562px;
       margin: 0 auto;
       background: #1c3374;
@@ -110,11 +111,20 @@
         max-width: 556px;
         padding-bottom: 20px;
       }
+
+      & picture {
+        grid-column-end: 2;
+        grid-column-start: 1;
+        margin-bottom: 19px;
+      }
     }
 
     & img {
+      position: absolute;
+
       @include vp-767 {
         margin-left: 15px;
+        width: 68px;
       }
     }
 
@@ -123,6 +133,8 @@
       font-size: 20px;
       line-height: 15px;
       margin-top: 0;
+      margin-bottom: 19px;
+      grid-column-start: 2;
 
       @include vp-767 {
         line-height: 26px;

@@ -98,7 +98,6 @@
     }
 
     @include vp-767 {
-      // margin-right: 0;
       padding-left: 0;
       text-align: center;
     }
@@ -157,6 +156,7 @@
   & img {
     display: block;
     object-fit: cover;
+    height: 100%;
 
     @include vp-1199 {
       display: block;
