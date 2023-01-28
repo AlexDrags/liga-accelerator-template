@@ -146,7 +146,6 @@
   }
 
   & .about__cover {
-    cursor: pointer;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -161,6 +160,21 @@
     @include vp-767 {
       content: url("../img/media-layer-mobile.png");
       width: 100%;
+    }
+  }
+
+  & img {
+    position: absolute;
+    cursor: pointer;
+    z-index: 300;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+
+    @include vp-1199 {
+      width: 73px;
+      height: 73px;
+      top: calc(50% - 37px);
+      left: calc(50% - 37px);
     }
   }
 
@@ -189,7 +203,6 @@
 
   @include vp-1199 {
     justify-content: center;
-    // position: relative;
   }
 
   @include vp-767 {

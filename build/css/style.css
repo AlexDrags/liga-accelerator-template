@@ -1921,13 +1921,20 @@ button,
 }
 
 .about__player-wrapper .about__cover {
-  cursor: pointer;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   content: url("../img/media-layer.png");
+}
+
+.about__player-wrapper img {
+  position: absolute;
+  cursor: pointer;
+  z-index: 300;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
 }
 
 .about__player-wrapper iframe {
@@ -3322,6 +3329,13 @@ button,
 
   .about__player-wrapper .about__cover {
     content: url("../img/media-layer-tablet.png");
+  }
+
+  .about__player-wrapper img {
+    width: 73px;
+    height: 73px;
+    top: calc(50% - 37px);
+    left: calc(50% - 37px);
   }
 
   .about__player-wrapper iframe {
