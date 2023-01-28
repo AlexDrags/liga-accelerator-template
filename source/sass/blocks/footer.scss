@@ -20,7 +20,6 @@
 .footer__container {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   min-height: 108px;
 
   @include vp-1199 {
@@ -29,9 +28,18 @@
 
   @include vp-767 {
     min-height: 260px;
+    flex-wrap: wrap;
   }
 }
 
 .footer__logo-wrapper {
   margin-right: auto;
+
+  @include vp-767 {
+    display: none;
+  }
+
+  & svg {
+    margin-top: 20px;
+  }
 }

@@ -97,6 +97,10 @@
     }
   }
 
+  & input::-webkit-input-placeholder {
+    color: $color-default-white;
+  }
+
   & input {
     border: none;
     background-color: transparent;
@@ -187,6 +191,7 @@
       line-height: 38px;
       margin-top: 64px;
       margin-right: 0;
+      text-align-last: left;
     }
   }
 

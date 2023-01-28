@@ -41,6 +41,10 @@
   padding: 0;
   position: relative;
 
+  @include vp-1199 {
+    max-width: 768px;
+  }
+
   @include vp-767 {
     padding: 0 47px;
   }
@@ -51,12 +55,8 @@
       right: -62px;
       top: 64%;
 
-      &::after {
-        font-size: 30px;
-
-        @include vp-767 {
-          font-size: 20px;
-        }
+      @include vp-1285 {
+        right: -40px;
       }
 
       @include vp-1239 {
@@ -72,12 +72,6 @@
         top: 61.2%;
         right: 7px;
       }
-    }
-
-    & .swiper-button-prev {
-      color: #afafaf;
-      left: -62px;
-      top: 64%;
 
       &::after {
         font-size: 30px;
@@ -85,6 +79,16 @@
         @include vp-767 {
           font-size: 20px;
         }
+      }
+    }
+
+    & .swiper-button-prev {
+      color: #afafaf;
+      left: -62px;
+      top: 64%;
+
+      @include vp-1285 {
+        left: -40px;
       }
 
       @include vp-1239 {
@@ -99,6 +103,14 @@
       @include vp-767 {
         top: 61.2%;
         left: 7px;
+      }
+
+      &::after {
+        font-size: 30px;
+
+        @include vp-767 {
+          font-size: 20px;
+        }
       }
     }
   }
