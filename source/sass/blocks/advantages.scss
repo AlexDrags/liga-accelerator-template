@@ -1,10 +1,9 @@
 .advantages {
-  background: linear-gradient(to right, $color-default-white 2.5%, $color-bg-abonement 2.5%);
+  background: $color-bg-abonement;
   padding-top: 102px;
   padding-bottom: 81px;
 
   @include vp-1199 {
-    background: $color-bg-abonement;
     padding-top: 57px;
     padding-bottom: 87px;
   }

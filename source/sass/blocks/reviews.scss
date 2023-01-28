@@ -62,7 +62,7 @@
   @include vp-1199 {
     width: 100%;
     min-width: 768px;
-    max-width: 1070px;
+    max-width: 768px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -75,14 +75,20 @@
   }
 
   & .swiper-button-next {
+    top: 120px;
+
     @include vp-767 {
       right: 0;
+      top: 170px;
     }
   }
 
   & .swiper-button-prev {
+    top: 120px;
+
     @include vp-767 {
       left: 0;
+      top: 170px;
     }
   }
 
@@ -93,13 +99,16 @@
       margin: 0 auto;
       background: #1c3374;
       color: $color-default-white;
-
       display: grid;
       grid-template-rows: 33px;
       grid-template-columns: 80px 1fr;
       padding: 62px;
       column-gap: 28px;
       padding-bottom: 43px;
+
+
+      overflow: auto;
+      max-height: 242px;
 
       @include vp-767 {
         grid-template-rows: auto;
@@ -110,6 +119,8 @@
         min-width: 226px;
         max-width: 556px;
         padding-bottom: 20px;
+        // overflow: visible;
+        max-height: 335px;
       }
 
       & picture {
