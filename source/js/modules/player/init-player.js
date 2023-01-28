@@ -4,16 +4,16 @@ const iframe = document.getElementById('iframe');
 
 
 function removeLayer() {
+  iframe.setAttribute('src', 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1&mute=1');
   mediaLayer.style.display = 'none';
   playMedia.style.display = 'none';
-  iframe.setAttribute('src', 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1');
 }
 
 playMedia.addEventListener('click', removeLayer);
 playMedia.addEventListener('keyup', (event)=>{
   if (event.keyCode === 13) {
+    iframe.setAttribute('src', 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1&mute=1');
     mediaLayer.style.display = 'none';
     playMedia.style.display = 'none';
-    iframe.setAttribute('src', 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1');
   }
 });
