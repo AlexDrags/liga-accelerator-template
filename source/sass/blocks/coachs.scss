@@ -41,6 +41,10 @@
   padding: 0;
   position: relative;
 
+  @include vp-1285 {
+    max-width: 1100px;
+  }
+
   @include vp-1199 {
     max-width: 768px;
   }
@@ -60,7 +64,7 @@
       }
 
       @include vp-1239 {
-        right: -20px;
+        right: -30px;
       }
 
       @include vp-1199 {
@@ -92,7 +96,7 @@
       }
 
       @include vp-1239 {
-        left: -20px;
+        left: -30px;
       }
 
       @include vp-1199 {
