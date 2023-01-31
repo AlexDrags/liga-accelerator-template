@@ -2298,7 +2298,7 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   padding-left: 78px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .promo__text {
@@ -4138,7 +4138,7 @@ button,
   }
 
   .promo a {
-    margin-bottom: 41px;
+    margin-bottom: 31px;
     min-width: 202px;
     min-height: 39px;
   }
