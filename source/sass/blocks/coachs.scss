@@ -42,7 +42,7 @@
   position: relative;
 
   @include vp-1285 {
-    max-width: 1100px;
+    max-width: 1090px;
   }
 
   @include vp-1199 {
@@ -59,12 +59,12 @@
       right: -62px;
       top: 64%;
 
-      @include vp-1285 {
+      @include vp-1331 {
         right: -40px;
       }
 
       @include vp-1239 {
-        right: -30px;
+        right: -35px;
       }
 
       @include vp-1199 {
@@ -91,12 +91,12 @@
       left: -62px;
       top: 64%;
 
-      @include vp-1285 {
+      @include vp-1331 {
         left: -40px;
       }
 
       @include vp-1239 {
-        left: -30px;
+        left: -35px;
       }
 
       @include vp-1199 {
